@@ -20,6 +20,10 @@ const InfoButton = styled.button`
     border-color: black;
     color: black;
     background-color: white;
+    width:7rem;
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 const SquareStyled = styled.div`
@@ -35,6 +39,9 @@ const SquareStyled = styled.div`
     padding: 0;
     text-align: center;
     width: 7rem;
+    &:hover {
+        cursor: pointer;
+    }
     @media (max-width: 700px) {
         line-height: 5rem;
         height: 5rem;
@@ -45,6 +52,8 @@ const SquareStyled = styled.div`
         height: 6rem;
         width: 6rem;
     }
+
+    
 `
 
 function Square(props){
