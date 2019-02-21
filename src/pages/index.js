@@ -2,8 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
+
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -18,6 +17,8 @@ import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
+import AboutMe from '../components/Home/AboutMe';
+import Contact from '../components/Home/Contact';
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -33,45 +34,6 @@ class HomeIndex extends React.Component {
     constructor() {
         super();
 
-        this.state = {
-            lightboxIsOpen: false,
-            currentImage: 0,
-        };
-
-        this.closeLightbox = this.closeLightbox.bind(this);
-        this.gotoNext = this.gotoNext.bind(this);
-        this.gotoPrevious = this.gotoPrevious.bind(this);
-        this.openLightbox = this.openLightbox.bind(this);
-        this.handleClickImage = this.handleClickImage.bind(this);
-    }
-
-    openLightbox (index, event) {
-        event.preventDefault();
-        this.setState({
-            currentImage: index,
-            lightboxIsOpen: true,
-        });
-    }
-    closeLightbox () {
-        this.setState({
-            currentImage: 0,
-            lightboxIsOpen: false,
-        });
-    }
-    gotoPrevious () {
-        this.setState({
-            currentImage: this.state.currentImage - 1,
-        });
-    }
-    gotoNext () {
-        this.setState({
-            currentImage: this.state.currentImage + 1,
-        });
-    }
-    handleClickImage () {
-        if (this.state.currentImage === this.props.images.length - 1) return;
-
-        this.gotoNext();
     }
 
     render() {
@@ -87,33 +49,9 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
-                    <section id="one">
-                        <header className="major">
-                            <h2>About Me</h2>
-                        </header>
-                        <p>I am a recent computer science graduate, who is currently pursuing educational and professional opportunities to find my niche in this ever-growing industry. My current focus is web development. Recently I have been exploring the capabilities of the JAMstack. The possibilities excite me due to its flexibility, extensibility and its reach. I seek out opportunities that allow me to harness the power of microservices that can come together on a web application and solve real world problems.</p>
-                    </section>
+                    <AboutMe/>
+                    <Contact/>
 
-
-                    <section id="three">
-                        <h2>Get In Touch</h2>
-                        <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form name="contact" method="POST" data-netlify="true">
-                                    <input type="hidden" name="form-name" value="contact" />
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                    <br/>
-                                    <ul className="actions">
-                                        <li><input type="submit" value="Send Message" /></li>
-                                    </ul>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
 
                 </div>
 
