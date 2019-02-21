@@ -13,10 +13,10 @@ export default function (){
                             <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
                             <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
                         </div>
-                    </form>
-                    <ul className="actions">
+                        <ul className="actions">
                             <li><input type="submit" value="Send Message" /></li>
-                    </ul>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </section>
