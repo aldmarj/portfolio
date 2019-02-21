@@ -152,7 +152,7 @@ render() {
     }
 
     return (
-        <div>
+        <section id="TicTacToe">
             <header className="major">
                 <h2>Tic-Tac-Toe</h2>
             </header>
@@ -170,7 +170,7 @@ render() {
                     <ol>{moves}</ol>
                 </Tile>
             </GridStyled>
-        </div>
+        </section>
     );
 }
 }

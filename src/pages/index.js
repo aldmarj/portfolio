@@ -51,9 +51,7 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <AboutMe/>
-                    <section id="TicTacToe">
-                        <Game/>
-                    </section>
+                    <Game/>
                     <Contact/>
 
 
