@@ -19,6 +19,7 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 import AboutMe from '../components/Home/AboutMe';
 import Contact from '../components/Home/Contact';
+import Game from '../components/Home/TicTacToe';
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -50,6 +51,9 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <AboutMe/>
+                    <section id="TicTacToe">
+                        <Game/>
+                    </section>
                     <Contact/>
 
 
