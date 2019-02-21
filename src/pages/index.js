@@ -91,7 +91,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About Me</h2>
                         </header>
-                        <p>I am a recent computer science graduate, who is currently pursuing educational and professional opportunities to find my niche in this ever-growing industry. My current focus is web development. Recently I have been exploring the capabilities of the JAM stack. The possibilities excite me due to its flexibility, extensibility and its reach. I seek out opportunities that allow me to harness the power of microservices that can come together on a web application and solve real world problems.</p>
+                        <p>I am a recent computer science graduate, who is currently pursuing educational and professional opportunities to find my niche in this ever-growing industry. My current focus is web development. Recently I have been exploring the capabilities of the JAMstack. The possibilities excite me due to its flexibility, extensibility and its reach. I seek out opportunities that allow me to harness the power of microservices that can come together on a web application and solve real world problems.</p>
                     </section>
 
 
@@ -99,16 +99,17 @@ class HomeIndex extends React.Component {
                         <h2>Get In Touch</h2>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form name="contact" netlify>
+                                <form name="contact" method="POST" data-netlify="true">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
                                         <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
                                     </div>
+                                    <br/>
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                    </ul>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
                             </div>
                         </div>
                     </section>
