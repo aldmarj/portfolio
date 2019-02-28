@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/scss/main.scss'
 
 import Header from './Header'
+import ChatBot from './ChatBot';
 
 class Template extends React.Component {
     render() {
@@ -10,6 +11,7 @@ class Template extends React.Component {
         return (
             <div>
                 <Header />
+                <ChatBot />
                 {children}
             </div>
         )
