@@ -2,7 +2,7 @@ import React , { Component } from 'react'
 import '../assets/scss/main.scss'
 
 import Header from './Header'
-//import ChatBot from './ChatBot';
+import ChatBot from './ChatBot';
 
 export default class Template extends Component {
     render() {
@@ -11,7 +11,7 @@ export default class Template extends Component {
         return (
             <div>
                 <Header />
-                {/* <ChatBot /> */}
+                <ChatBot />
                 {children}
             </div>
         )
