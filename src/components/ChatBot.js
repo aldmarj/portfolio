@@ -18,6 +18,7 @@ class ChatBot extends Component {
         channel.bind('bot-response', data => {
         
         addResponseMessage(data.message);
+        
     });
   }
 
@@ -36,15 +37,15 @@ class ChatBot extends Component {
     this.handleSubmit(newMessage);
   }
 
-render (){
+  render(){
     return(
-        <Widget 
-          handleNewUserMessage={this.handleNewUserMessage}
-          title="Weather ChatBot"
-          subtitle="Ask me about the weather in your area." 
-        />
+      <Widget 
+        handleNewUserMessage={this.handleNewUserMessage}
+        title="Weather ChatBot"
+        subtitle="Ask me about the weather in your area." 
+      />
     )
-}
+  }
 
 }
 
