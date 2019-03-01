@@ -4,13 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-export function onCreateWebpackConfig({ stage, loaders, actions }) {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     if (stage === "build-html") {
       actions.setWebpackConfig({
         module: {
           rules: [
             {
-              test: /react-chat-widget/,
+              test: react-chat-widget,
               use: loaders.null(),
             },
           ],
