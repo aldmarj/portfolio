@@ -10,7 +10,7 @@ export function onCreateWebpackConfig({ stage, loaders, actions }) {
         module: {
           rules: [
             {
-              test: './node-modules/react-chat-window',
+              test: /react-chat-widget/,
               use: loaders.null(),
             },
           ],
