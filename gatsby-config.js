@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: 'Aldmar Joubert',
         short_name: 'Aldmar',
-        start_url: 'https://brave-galileo-6773b0.netlify.com/',
+        start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',

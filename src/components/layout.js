@@ -1,21 +1,20 @@
-import React from 'react'
+import React , { Component } from 'react'
 import '../assets/scss/main.scss'
 
 import Header from './Header'
-import ChatBot from './ChatBot';
+//import ChatBot from './ChatBot';
 
-class Template extends React.Component {
+export default class Template extends Component {
     render() {
         const { children } = this.props
 
         return (
             <div>
                 <Header />
-                <ChatBot />
+                {/* <ChatBot /> */}
                 {children}
             </div>
         )
     }
 }
 
-export default Template
