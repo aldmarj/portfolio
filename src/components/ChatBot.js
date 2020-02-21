@@ -28,6 +28,7 @@ class ChatBot extends Component {
     })
 
     fetch('https://powerful-thicket-32529.herokuapp.com/chat', {
+      credentials: 'include',
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify({
