@@ -6,7 +6,10 @@ export default function(){
             <header className="major">
                 <h2>About Me</h2>
             </header>
-            <p>I am a recent computer science graduate, who is currently pursuing educational and professional opportunities to find my niche in this ever-growing industry. My current focus is web development. Recently I have been exploring the capabilities of the JAMstack. The possibilities excite me due to its flexibility, extensibility and its reach. I seek out opportunities that allow me to harness the power of microservices that can come together on a web application and solve real world problems.</p>
+            <p>A highly motivated Computer Science graduate, I am eager to learn and excited by the prospect of a challenge.
+I spend my free time learning new technologies that will broaden my scope and developing my personal and professional network. You will find me exploring the outdoors via bicycle and going bouldering with friends. I desire to work with a team towards a goal we are passionate about.
+
+</p>
         </section>
     )
 }

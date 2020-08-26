@@ -11,7 +11,6 @@ export default class Template extends Component {
         return (
             <div>
                 <Header />
-                <ChatBot />
                 {children}
             </div>
         )
